@@ -7,7 +7,7 @@
 #   日期：2016-04-07
 #   语言：Python 3 
 #   说明：Floyd's Algorithm (Tortoise and Hare Algorithm)
-# 	扩展：判断环起点位置 
+#   扩展：判断环起点位置 
 #   参考：https://en.wikipedia.org/wiki/Cycle_detection#cite_note-9
 #---------------------------------------
 
