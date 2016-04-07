@@ -46,7 +46,6 @@ def detectCycle(self, head):
 
 # 2. Brent's Algorithm
 def detectCycle2(self, head):
-<<<<<<< HEAD
     if (not head) or (not head.next) or (not head.next.next):
         return None
     slow = head
@@ -68,26 +67,3 @@ def detectCycle2(self, head):
         slow = slow.next
         fast = fast.next
     return slow
-=======
-	if (not head) or (not head.next) or (not head.next.next):
-		return None
-	slow = head
-	fast = head.next
-	power, period = 1, 1
-	while slow != fast:
-		if not fast:
-			return None
-		if power == period:
-			slow = fast
-			power = power * 2
-			period = 0
-		fast = fast.next
-		period += 1
-	slow = fast = head		#先寻找循环长度， 避免起点跟环起点相距过远，快指针在圈内多绕圈
-	for _ in range(period):
-		fast = fast.next
-	while slow != fast:
-		slow = slow.next
-		fast = fast.next
-	return slow
->>>>>>> 968867cd90218c58481c319b6a61ac55c1fd364f
