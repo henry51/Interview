@@ -14,11 +14,11 @@ class ListNode(object):
         self.next = None
 
 def theMiddleNode(head):
-	# 同快慢指针概念，只是这次快指针每次移动都快一步
-	if head == None or head.next == None:
-		return head
-	slow = fast = head
-	while(fast and fast.next):
-		fast = fast.next.next
-		slow = slow.next
-	return slow
+    # 同快慢指针概念，只是这次快指针每次移动都快一步
+    if head == None or head.next == None:
+        return head
+    slow = fast = head
+    while(fast and fast.next):
+        fast = fast.next.next
+        slow = slow.next
+    return slow

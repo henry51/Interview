@@ -14,7 +14,7 @@ class ListNode(object):
         self.next = None
 
 def deleteRandomNode(node):
-	#要求O(n)时间复杂度，所以本质是需要改变链表，缺陷是无法针对最后一个节点这么做。
-	node.val = node.next.val
-	node.next = node.next.next
+    #要求O(n)时间复杂度，所以本质是需要改变链表，缺陷是无法针对最后一个节点这么做。
+    node.val = node.next.val
+    node.next = node.next.next
 

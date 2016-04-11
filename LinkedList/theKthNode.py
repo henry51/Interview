@@ -14,16 +14,16 @@ class ListNode(object):
         self.next = None
 
 def theKthNode(head, k):
-	#快慢双指针
-	if k < 0:
-		return None
-	slow = fast = head
-	for i in range(k):
-		if fast:
-			fast = fast.next
-		else:
-			return None
-	while fast:
-		slow = slow.next
-		fast = fast.next
-	return slow
+    #快慢双指针
+    if k < 0:
+        return None
+    slow = fast = head
+    for i in range(k):
+        if fast:
+            fast = fast.next
+        else:
+            return None
+    while fast:
+        slow = slow.next
+        fast = fast.next
+    return slow

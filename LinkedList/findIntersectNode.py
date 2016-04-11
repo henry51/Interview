@@ -14,11 +14,11 @@ class ListNode(object):
         self.next = None
 
 def findIntersectNode(h1, h2):
-	# 人为构造环
-	temp = h1
-	while temp.next:
-		temp = temp.next
-	temp.next = h2
-	detectCycle(h1)
+    # 人为构造环
+    temp = h1
+    while temp.next:
+        temp = temp.next
+    temp.next = h2
+    detectCycle(h1)
 
-	#也可以通过计算链表的长度差来调整指针出发时刻，从而得到相交点
+    #也可以通过计算链表的长度差来调整指针出发时刻，从而得到相交点
