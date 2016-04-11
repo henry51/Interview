@@ -17,7 +17,7 @@ class ListNode(object):
         self.next = None
 
 # 判断是否有环(龟兔赛跑算法哈！)
-def hasCycle(self, head):
+def hasCycle(head):
     # type head : ListNode
     try:   #采用EAFP principle
         slow = head
@@ -31,7 +31,7 @@ def hasCycle(self, head):
 
 # 判断环的起始位置
 # 1.Floyd's Algorithm
-def detectCycle(self, head):
+def detectCycle(head):
     slow = fast = head
     while fast and fast.next:
         slow = slow.next
@@ -45,7 +45,7 @@ def detectCycle(self, head):
     return None
 
 # 2. Brent's Algorithm
-def detectCycle2(self, head):
+def detectCycle2(head):
     if (not head) or (not head.next) or (not head.next.next):
         return None
     slow = head
